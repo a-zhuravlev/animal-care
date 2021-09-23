@@ -34,7 +34,7 @@ def post_something():
     # You can add the test cases you made in the previous function, but in our case here you are just testing the POST functionality
     if param:
         return jsonify({
-            "Message": f"Welcome {name} to ЗОЖ!!",
+            "Message": f"Welcome {param} to ЗОЖ!!",
             # Add this option to distinct the POST request
             "METHOD" : "POST"
         })
@@ -47,7 +47,7 @@ def post_something():
 # A welcome message to test our server
 @app.route('/')
 def index():
-    return "<h1Animal Care Bot</h1>"
+    return "<h1>Animal Care Bot</h1>"
 
 
 if __name__ == '__main__':
